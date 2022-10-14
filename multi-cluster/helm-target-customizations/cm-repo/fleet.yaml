@@ -2,28 +2,27 @@
 
 # The namespace this chart will be installed and restricted to,
 # if not specified the chart will be installed to "default"
-namespace: fleet-mc-helm-target-customizations-example
+namespace: fleet-mc-helm-target-customizations-example-cm-repo
 
 # Custom helm options
 helm:
   # The release name to use. If empty a generated release name will be used
-  releaseName: radicale
+  releaseName: kubernetes-dashboard
 
   # The directory of the chart in the repo.  Also any valid go-getter supported
   # URL can be used there is specify where to download the chart from.
   # If repo below is set this value if the chart name in the repo
-  chart: "radicale"
+  chart: "kubernetes-dashboard"
 
   # An https to a valid Helm repository to download the chart from
-  repo: "https://charts.truecharts.org"
+  repo: "https://kubernetes.github.io/dashboard/"
 
   # Used if repo is set to look up the version of the chart
-  version: "0.0.35"
+  version: "5.11.0"
 targetCustomizations:
 - name: test
   helm:
-    repo: "https://charts.truecharts.org///"
-    version: "0.0.36"
+    repo: "https://wenerme.github.io/charts"
   clusterSelector:
     matchLabels:
       env: test
