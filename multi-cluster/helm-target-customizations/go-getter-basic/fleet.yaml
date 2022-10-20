@@ -13,6 +13,9 @@ helm:
   # URL can be used there is specify where to download the chart from.
   # If repo below is set this value if the chart name in the repo
   chart: "https://kubernetes.github.io/dashboard/kubernetes-dashboard-5.10.0.tgz"
+  values:
+    rbac:
+      clusterRoleMetrics: false
 targetCustomizations:
 - name: test
   helm:
