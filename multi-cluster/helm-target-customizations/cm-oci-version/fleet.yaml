@@ -22,7 +22,7 @@ helm:
 targetCustomizations:
 - name: test
   helm:
-    chart: "oci://romejoe.jfrog.io/fleet-test-docker-local/kubernetes-dashboard/kubernetes-dashboard"
+    chart: "oci://northamerica-northeast1-docker.pkg.dev/romejoe-fleet-dev/kubernetes-dashboard/kubernetes-dashboard"
     version: "5.11.0"
   clusterSelector:
     matchLabels:

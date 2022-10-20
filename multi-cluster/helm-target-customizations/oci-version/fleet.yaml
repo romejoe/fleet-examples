@@ -12,7 +12,7 @@ helm:
   # The directory of the chart in the repo.  Also any valid go-getter supported
   # URL can be used there is specify where to download the chart from.
   # If repo below is set this value if the chart name in the repo
-  chart: "oci://romejoe.jfrog.io/fleet-test-docker-local/kubernetes-dashboard/kubernetes-dashboard"
+  chart: "oci://northamerica-northeast1-docker.pkg.dev/romejoe-fleet-dev/kubernetes-dashboard/kubernetes-dashboard"
   
   # Used if repo is set to look up the version of the chart
   version: "5.10.0"
