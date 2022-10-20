@@ -2,7 +2,7 @@
 
 # The namespace this chart will be installed and restricted to,
 # if not specified the chart will be installed to "default"
-namespace: fleet-mc-helm-target-customizations-example-cm-oci-version
+defaultNamespace: fleet-mc-helm-target-customizations-example-cm-oci-version
 
 # Custom helm options
 helm:

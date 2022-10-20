@@ -2,7 +2,7 @@
 
 # The namespace this chart will be installed and restricted to,
 # if not specified the chart will be installed to "default"
-namespace: fleet-mc-helm-target-customizations-example-cm-repo
+defaultNamespace: fleet-mc-helm-target-customizations-example-cm-repo
 
 # Custom helm options
 helm:
